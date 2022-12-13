@@ -37,15 +37,17 @@ let montocuota = dividir(monto, cuotas);
 //Mostrar resultado
 alert(Cliente.nombre + " de" + Cliente.edad + " años de edad, con domicilio en " + Cliente.domicilio + " Pagará " + monto + " en " + cuotas + " cuotas mensuales de " + montocuota + " dolares cada una.")
 
+//Crea objeto "aval" y captura los parametros mediante prompt
 const Aval = {
   nombre: prompt("¿Cual es el nombre del aval?"),
   edad: prompt("¿Que edad tiene el aval?"),
 }
-
+//Crea array "Riesgo" pushea parametro de edad del aval.
 const Riesgo = [ ];
 Riesgo.push(Aval.edad);
 console.log(Riesgo);
 
+//compara la posición 0 del array mediante un ciclo para filtrar el riesgo.
 if (Riesgo[0] <= 25) {
   console.log("Riesgo alto")
 }
