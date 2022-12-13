@@ -4,10 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./entrega.js"></script>
-    <title>Document</title>
-</head>
-<body>
     
+    <title>Calculadora de cuotas sin interés</title>
+</head>
+        <h1>Calculadora de creditos en cuotas sin interés</h1>
+<body>
+  <div id="container">
+  <div id="calculadora">
+<!-- Datos cliente-->
+    <form>
+    <p>Datos del cliente</p>
+     <input id="nombre" type="text" placeholder="ingrese nombre">
+    <p>¿Cual es el monto del crédito?</p>
+     <input id="edad" type="number" placeholder="ingrese edad">
+    <p>¿Cual es el monto del crédito?</p>
+     <input id="domicilio" type="text" placeholder="ingrese domicilio">
+    </form>
+
+    <!-- Datos del crédito-->
+    <form>
+      <p>¿Cual es el monto del crédito?</p>
+      $ <input id="monto1" type="number" placeholder="ingrese el monto">
+      <p>¿En cuantas cuotas desea pagarlo?</p>
+      <select id="cuotas1">   
+            <option disabled selected value="0">¿Elija el numero de cuotas mensuales?</option>
+            <option value="1">1 </option>
+            <option value="2">2 </option>
+            <option value="3">2 </option>
+            <option value="4">4 </option>
+            <option value="5">5 </option>
+            <option value="6">6 </option>
+            <option value="7">7 </option>
+            <option value="8">8 </option>
+            <option value="9">9 </option>
+            <option value="10">10 </option>
+            <option value="10">11 </option>
+            <option value="10">12 </option>
+     </select>
+    </form>
+
+    <!-- Datos Aval-->
+<form>
+    <p>Datos del cliente</p>
+     <input id="nombreAval" type="text" placeholder="ingrese nombre">
+    <p>¿Cual es el monto del crédito?</p>
+     <input id="edadAval" type="number" placeholder="ingrese edad">
+    </form>
+<br>
+    <button type="button" id="calcular">Calcular</button>
+  </div>
+ </br>
+<div id="resultado">
+    <p>el monto total es <p> $ <span id="monto1"> </span>
+    Se pagara en <p id="cuotas1"> Mensuales</p>
+</div>
+</div>
+  
 </body>
+<script src="./entrega.js"></script>
 </html>
