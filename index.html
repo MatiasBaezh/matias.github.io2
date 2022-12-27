@@ -12,54 +12,51 @@
   <div id="container">
   <div id="calculadora">
 <!-- Datos cliente-->
-    <form>
-    <p>Datos del cliente</p>
-     <input id="nombre" type="text" placeholder="ingrese nombre">
-    <p>¿Cual es el monto del crédito?</p>
-     <input id="edad" type="number" placeholder="ingrese edad">
-    <p>¿Cual es el monto del crédito?</p>
-     <input id="domicilio" type="text" placeholder="ingrese domicilio">
+    <form id="Formulario">
+    <div>
+      <p>Datos del cliente</p>
+        <label for="Nombre">Nombre del cliente</label> <br>
+        <input type="text" id="nombre" name="nombre" placeholder="ingrese nombre">
+      
+        <p>¿Cual es su edad?</p>
+        <label for="edad">Edad del cliente</label> <br>
+        <input type="text" id="edad" name="edad" placeholder="ingrese edad">
+      
+        <p>¿Cual es  su domicilio?</p>
+        <label for="Domiclio">Domicilio del cliente</label><br>
+        <input type="text" id="domicilio" name="domicilio" placeholder="ingrese domicilio">
+      <!-- monto del credito en cuotas -->
+          <p>¿Cual es el monto del crédito?</p>
+          <label for="Monto">Monto del credito</label><br>
+          $ <input type="number" id="monto" name="monto" placeholder="ingrese el monto">
+      </div>
+    <!-- selector de la cantidad de cuotas con un valor asignado por cada opción -->
+      <div>
+          <p>¿En cuantas cuotas desea pagarlo?</p>
+          <label for="N° cuotas">Elija el numero de cuotas</label> 
+            <select name="cuotas" id="cuotas">   
+              <option value="1">1 </option>
+              <option value="2">2 </option>
+              <option value="3">2 </option>
+              <option value="4">4 </option>
+              <option value="5">5 </option>
+              <option value="6">6 </option>
+              <option value="7">7 </option>
+              <option value="8">8 </option>
+              <option value="9">9 </option>
+              <option value="10">10 </option>
+              <option value="11">11 </option>
+              <option value="12">12 </option> 
+            </select>
+        </div>    
+        <!-- Boton para ejecutar enviar los datos poblar el objeto "datos en JS"-->
+        <div>
+          <button type="submit"> Submit</button>
+        </div> 
     </form>
+  
+    <p>La cuota mensual es: $<span id="resultado"></span></p>
 
-    <!-- Datos del crédito-->
-    <form>
-      <p>¿Cual es el monto del crédito?</p>
-      $ <input id="monto1" type="number" placeholder="ingrese el monto">
-      <p>¿En cuantas cuotas desea pagarlo?</p>
-      <select id="cuotas1">   
-            <option disabled selected value="0">¿Elija el numero de cuotas mensuales?</option>
-            <option value="1">1 </option>
-            <option value="2">2 </option>
-            <option value="3">2 </option>
-            <option value="4">4 </option>
-            <option value="5">5 </option>
-            <option value="6">6 </option>
-            <option value="7">7 </option>
-            <option value="8">8 </option>
-            <option value="9">9 </option>
-            <option value="10">10 </option>
-            <option value="10">11 </option>
-            <option value="10">12 </option>
-     </select>
-    </form>
-
-    <!-- Datos Aval-->
-<form>
-    <p>Datos del cliente</p>
-     <input id="nombreAval" type="text" placeholder="ingrese nombre">
-    <p>¿Cual es el monto del crédito?</p>
-     <input id="edadAval" type="number" placeholder="ingrese edad">
-    </form>
-<br>
- <!-- Boton para ejecutar la función en Js y mostrar el resultado-->
-    <button type="button" id="calcular">Calcular</button>
-  </div>
- </br>
-<div id="resultado">
-    <p>el monto total es <p> $ <span id="monto1"> </span>
-    Se pagara en <p id="cuotas1"> Mensuales</p>
-</div>
-</div>
   
 </body>
 <script src="./entrega.js"></script>
