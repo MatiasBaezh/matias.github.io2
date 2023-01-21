@@ -37,7 +37,7 @@ ul, ol, li {
     background-color: #4361ee;
     text-align:left;
     border-radius:10px;
-    height: 55px; /
+    height: 55px; 
 }
 
 .navbar a {
@@ -71,7 +71,7 @@ ul, ol, li {
 /* Estilo del formulario */
 form {
     width: 50%;
-    margin: 0 auto; /
+    margin: 0 auto; 
     padding: 2%;
     border: 1px solid #7209b7;
     border-radius: 10px; 
