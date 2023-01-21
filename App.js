@@ -1,6 +1,6 @@
 // Crea un objeto mediante un evento y almacena los datos ingresados en el formulario
 const form = document.querySelector('#Formulario');
-const elementoResultado = document.querySelector('#resultado');
+
 
 form.addEventListener('submit',  (event) => {
   // Evita recargar la página
